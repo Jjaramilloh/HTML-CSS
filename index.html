@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PaginaWeb con Bootstrap</title>
+   <link rel="Stylesheet" href="Recursos/css/bootstrap.css"> 
+   <script  src="Recursos/js/bootstrap.min.js"></script> 
+   <script src="Recursos/js/bootstrap2.js" ></script>
+
+	<link rel="icon" href="Recursos/img/favicon.png" sizes="32x32" type="image/png">
+	
+
+</head>
+<body>
+
+  <nav id="menu" class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="Recursos/img/MariaB.jpg" class="rounded-pill"  height="70" width="200" ></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ">
+        <a class="nav-link " style="color:#F4AF1B; font-size: 20PX" href="QuienesSomos.html" target="blank" >Quienes somos</a>
+        <a class="nav-link " style="color:#F4AF1B; font-size: 20PX" href="Productos.html" target="blank" >Nuestros Productos</a>
+        <a class="nav-link " style="color:#F4AF1B; font-size: 20PX"  href="Contacto.html" target="blank">Contacto</a>       
+      </div>
+
+    </div>
+    <div class="dropdown">
+  
+    <form class="d-flex" action="action" method="get">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+        <button class="btn btn-outline-warning"  onclick="return Confirmar('Aun no tenemos esta funcion activa');" href="index.html"  type="submit">Buscar</button>
+      </form>
+  </div>
+
+
+
+</nav>
+
+
+<!-- carrusel -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" align="center">
+        <a href="#"><img class="d-block w-90" src="Recursos/img/SKALA 2.jpg" alt="First slide" width="400px" height="300" ></a>
+    </div>
+    <div class="carousel-item" align="center">
+        <a href="#"><img class="d-block w-90"  src="Recursos/img/Kit2.png" alt="Second slide"  width="400px" height="300" ></a>
+    </div>
+    <div class="carousel-item" align="center">
+        <a href="#"><img class="d-block w-90" src="Recursos/img/marykay.jpg" alt="Third slide"  width="400px" height="300"   ></a>
+    </div>
+     <div class="carousel-item" align="center">
+         <a href="#"><img class="d-block w-90" src="Recursos/img/kit.png" alt="fourth slide"  width="400px" height="300"   ></a>
+    </div>
+    <div class="carousel-item" align="center">
+        <a href="#"><img class="d-block w-90" src="Recursos/img/skala.jpg" alt="fifth slide"  width="400px" height="300"   ></a>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon  btn-warning" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next " href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon btn-warning" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>
+</div>
+
+
+<!-- -->
+
+<main class="container">
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Maria B Distribuciones</h1>
+    <p class="lead">Distribuimos los mejores productos marca Skala para ciudado del cabello para las mujeres que se quieren ver hermosas, ademas tambien tenemos toda la linea de productos Mary Kay.</p>
+  </div>
+
+
+
+ <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+<div class="col" >
+      <div class="card mb-4 shadow-sm" >
+      <div class="card-header" style="background: #00154f " >
+        <h4 class="my-0 fw-normal"  style="color: #f4af1b" >Leche Vegetal</h4>
+      </div>
+      <div class="card-body" >
+         <img src="Recursos/img/skala leche vegetal.png" width="200" height="200">
+        <h1 class="card-title pricing-card-title">$34000 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Hidratacion profunda</li>
+          <li>Sedosidad</li>
+          <li>Fuerza</li>
+          <li>Brillo</li>
+        </ul>        
+      </div>
+      <div  class="card-header" style="background: #00154f " >
+          <button onclick="return Confirmar('Aun no tenemos esta funcion activa');" href="index.html" type="button"  class="w-100 btn btn-lg btn-outline-warning">Agregar al Carrito</button>
+        </div>
+    </div>
+    </div>
+   <div class="col" >
+      <div class="card mb-4 shadow-sm" >
+      <div class="card-header" style="background: #00154f " >
+        <h4 class="my-0 fw-normal"  style="color: #f4af1b" >Maracujá</h4>
+      </div>
+      <div class="card-body" >
+        <img src="Recursos/img/skala maracuja.png" width="200" height="200">
+        <h1 class="card-title pricing-card-title">$34000 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Oleos de Pataua</li>
+          <li>olor a maracuya</li>
+          <li>Crecimiento</li>
+          <li>Fuerza</li>          
+        </ul>      
+      </div>
+      <div  class="card-header" style="background: #00154f " >
+          <button onclick="return Confirmar('Aun no tenemos esta funcion activa');" href="index.html" type="button"  class="w-100 btn btn-lg btn-outline-warning">Agregar al Carrito</button>
+        </div>
+    </div>
+    </div>
+    <div class="col" >
+      <div class="card mb-4 shadow-sm" >
+      <div class="card-header" style="background: #00154f " >
+        <h4 class="my-0 fw-normal"  style="color: #f4af1b" >Kit de Cebolla</h4>
+      </div>
+      <div class="card-body" >
+        <img src="Recursos/img/kit.png" width="200" height="200">
+        <h1 class="card-title pricing-card-title">$29000 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Mascarilla Capilar</li>
+          <li>Libre de sal</li>
+          <li>Acondicionador</li>
+          <li>Shampoo</li>
+        </ul>
+      </div>
+      <div  class="card-header" style="background: #00154f " >
+          <button onclick="return Confirmar('Aun no tenemos esta funcion activa');" href="index.html" type="button"  class="w-100 btn btn-lg btn-outline-warning">Agregar al Carrito</button>
+        </div>
+    </div>
+    </div>
+    <div class="col" >
+      <div class="card mb-4 shadow-sm" >
+      <div class="card-header" style="background: #00154f " >
+        <h4 class="my-0 fw-normal"  style="color: #f4af1b" >Mais Cachos</h4>
+      </div>
+      <div class="card-body" >
+        <img src="Recursos/img/skala mais Cachos.png" width="200" height="200">
+        <h1 class="card-title pricing-card-title">$34000 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Crema para peinar y tratamiento</li>
+          <li>Hidratacion y Brillo</li>
+          <li>Todo tipo de crespos</li>
+          <li>Fuerza y reparacion</li>
+        </ul>        
+      </div>
+      <div  class="card-header" style="background: #00154f " >
+          <button onclick="return Confirmar('Aun no tenemos esta funcion activa');" href="index.html" type="button"  class="w-100 btn btn-lg btn-outline-warning">Agregar al Carrito</button>
+        </div>
+    </div>
+    </div>
+   <div class="col" >
+      <div class="card mb-4 shadow-sm" >
+      <div class="card-header" style="background: #00154f " >
+        <h4 class="my-0 fw-normal"  style="color: #f4af1b" >Divino Potao</h4>
+      </div>
+      <div class="card-body" >
+        <img src="Recursos/img/skala divino potao.png" width="200" height="200">
+        <h1 class="card-title pricing-card-title">$34000 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Ideal pra cabellos en transicion</li>
+          <li>Hidrata da brillo y fuerza</li>          
+          <li>Libre de sulfatos y silicinas</li>
+          <li>Crema para peinar</li>
+        </ul>      
+      </div>
+      <div  class="card-header" style="background: #00154f " >
+          <button onclick="return Confirmar('Aun no tenemos esta funcion activa');" href="index.html" type="button"  class="w-100 btn btn-lg btn-outline-warning">Agregar al Carrito</button>
+        </div>
+    </div>
+    </div>
+    <div class="col" >
+      <div class="card mb-4 shadow-sm" >
+      <div class="card-header" style="background: #00154f " >
+        <h4 class="my-0 fw-normal"  style="color: #f4af1b" >Divino Potinho</h4>
+      </div>
+      <div class="card-body" >
+        <img src="Recursos/img/skala divino Potinho.png" width="200" height="200">
+        <h1 class="card-title pricing-card-title">$34000 <small class="text-muted">/ mo</small></h1>
+        <ul class="list-unstyled mt-3 mb-4">
+          <li>Cuidado del cabello de niñas</li>
+          <li>Ellimina el friz</li>          
+          <li>Oleo de coco y linaza</li>
+          <li>Cabello mas suelto</li>
+        </ul>
+      </div>
+      <div  class="card-header" style="background: #00154f " >
+          <button onclick="return Confirmar('Aun no tenemos esta funcion activa');" href="index.html" type="button"  class="w-100 btn btn-lg btn-outline-warning">Agregar al Carrito</button>
+        </div>
+    </div>
+    </div>
+
+  </div>
+
+
+
+  <!--  Experimento -->
+
+
+
+
+  
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script> 
+
+     <script>
+function Confirmar(Mensaje){
+                return (confirm(Mensaje))?true:false;
+            }
+
+     </script>
+    </body>
+
+    <script src="Recursos/js/bootstrap.bundle.js"></script>
+
+    </main>
+    </body>
+            <footer class="my-5 pt-5 text-muted text-center text-small" style="background: #f4af1b">
+    <p class="mb-1">&copy; 2018-2022 Estudiante Jorge Jaramillo, Universidad de Cartagena</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#" class="nav-link"><b>Privacidad</a></li>
+      <li class="list-inline-item"><a href="#" class="nav-link">Terminos</a></li>
+      <li class="list-inline-item"><a href="#" class="nav-link">Soporte</a></li>      
+    </ul>
+
+    <br>
+    <br>
+
+  </footer> 
+</html>
+
+

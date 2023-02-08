@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PaginaWeb con Bootstrap</title>
+   <link rel="Stylesheet" href="Recursos/css/bootstrap.css"> 
+   <script  src="Recursos/js/bootstrap.min.js"></script> 
+   <script src="Recursos/js/bootstrap2.js" ></script>
+
+	<link rel="icon" href="Recursos/img/favicon.png" sizes="32x32" type="image/png">
+	
+
+</head>
+<body>
+
+  <nav id="menu" class="navbar navbar-expand-lg  navbar-dark bg-dark ">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="Recursos/img/MariaB.jpg" class="rounded-pill"  height="70" width="200" ></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ">
+        <a class="nav-link " style="color:#F4AF1B; font-size: 20PX" href="QuienesSomos.html" target="blank" >Quienes somos</a>
+        <a class="nav-link " style="color:#F4AF1B; font-size: 20PX" href="Productos.html" target="blank" >Nuestros Productos</a>
+        <a class="nav-link " style="color:#F4AF1B; font-size: 20PX"  href="Contacto.html" target="blank">Contacto</a>       
+      </div>
+
+    </div>
+    <div class="dropdown">
+  
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="search">
+        <button class="btn btn-outline-warning" type="submit">Buscar</button>
+      </form>
+  </div>
+
+
+
+</nav>
+
+<main style="color: #F4AF1B" class="container">
+
+<h1>Quienes Somos</h1>
+<h2 style="color: #00154f"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h2> 
+
+</main>
+
+
+
+
+  
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> -->
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script> 
+
+     <script>
+       $(window).scroll(function(){
+        if($("#menu").offset().top>56){
+          $("#menu").addClass("bg-inverse");
+       } else{
+            $("#menu").removeClass("bg-inverse");
+       }
+     });
+
+     </script>
+    </body>
+
+    <script src="Recursos/js/bootstrap.bundle.js"></script>
+
+    </main>
+    </body>
+            <footer class="my-5 pt-5 text-muted text-center text-small" style="background: #f4af1b">
+    <p class="mb-1">&copy; 2018-2022 Estudiante Jorge Jaramillo, Universidad de Cartagena</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#" class="nav-link"><b>Privacidad</a></li>
+      <li class="list-inline-item"><a href="#" class="nav-link">Terminos</a></li>
+      <li class="list-inline-item"><a href="#" class="nav-link">Soporte</a></li>      
+    </ul>
+
+    <br>
+    <br>
+  </footer>
+  
+</html>
